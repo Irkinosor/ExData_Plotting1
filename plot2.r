@@ -13,7 +13,7 @@ power[,3:9]<- suppressWarnings(sapply(power[,3:9],as.numeric))
 
 #making second plot
 
-plot(power$fullDate,power$Global_active_power, xlab = "",ylab = "Global Active Power",
+plot(power$fullDate,power$Global_active_power, xlab = "",ylab = "Global Active Power(kilowatt)",
      type ="l" )
 dev.copy(png, file = "plot2.png")
 dev.off()
